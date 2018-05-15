@@ -19,9 +19,9 @@ strategy.close("Long", when=longClose)
 strategy.close("Short", when=shortClose)
 
 
-In the TradingView Strategy Tester panel click the Export button as shown below to copy the trade history of your strategy to the clipboard
+In the TradingView Strategy Tester panel click the [Export Button](https://i.imgur.com/m6oyxDH.png) as shown to copy the trade history of your strategy to the clipboard
 
-[Export](https://i.imgur.com/m6oyxDH.png)
+
 
 Replace strategy in trades.txt with what is copied to your clipboard and run
 
