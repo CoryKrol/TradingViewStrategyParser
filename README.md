@@ -13,11 +13,11 @@ The program assumes that you used strategy.entry() and strategy.close() function
 
 
 >strategy.entry("Long", 1, when=longCondition)
-
+>
 >strategy.entry("Short", 0,  when=shortCondition)
-
+>
 >strategy.close("Long", when=longClose)
-
+>
 >strategy.close("Short", when=shortClose)
 
 
@@ -37,42 +37,41 @@ Navigate to the folder and run
 ### Sample Output
 
 >TradeInfo trade-file-path is trades.txt
-
+>
 >TradeInfo initial-capital is 500
-
+>
 >TradeInfo maker-fee is 0.16
-
+>
 >TradeInfo taker-fee is 0.26
-
+>
 >Use Limit Orders? [y/N]: n
-
-
+>
+>
 >Mean Returns: 0.88%
-
+>
 >Standard Deviation of Returns: 3.17%
-
-
+>
+>
 >Kelly Leverage: 8.73
-
+>
 >Half Kelly: 4.37
-
-
+>
 >Initial Capital: $500.00
-
-
+>
+>
 >Kelly Leverage: 8
-
+>
 >Kelly Leveraged Profit/Loss: $-290.58
-
+>
 >Kelly Leveraged P/L Percent: -58.12%
-
-
-
-
+>
+>
+>
+>
 >Half Kelly: 4
-
+>
 >Half Kelly Leveraged Profit/Loss: $1065.53
-
+>
 >Half Kelly Leveraged P/L Percent: 213.11%
 
 
