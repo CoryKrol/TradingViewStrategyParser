@@ -79,7 +79,7 @@ Navigate to the folder and run
 ### Disclaimer
 I would advise using the half Kelly Leverage and rounding down and only increasing if this yields success. 
 
-In the above example you see that using the Full Kelly of 8 would have brought on large drawdown where as using the half Kelly we would have tripled our money using this specific strategy. (No you can't have it)
+#### In the above example you see that using the Full Kelly of 8 would have brought on large drawdown where as using the half Kelly we would have tripled our money using this specific strategy. (No you can't have it)
 
 
-Again I am not responsible for my program saying "Kelly Leverage: 95" and then you go and lose your house payment.
+#### Again I am not responsible for my program saying "Kelly Leverage: 95" and then you go and lose your house payment.
