@@ -44,6 +44,8 @@ Navigate to the folder and run
 >
 >TradeInfo taker-fee is 0.26
 >
+>TradeInfo slippage is 0.05
+>
 >Use Limit Orders? [y/N]: n
 >
 >
@@ -83,3 +85,7 @@ I would advise using the half Kelly Leverage and rounding down and only increasi
 
 
 #### Again I am not responsible for my program saying "Kelly Leverage: 95" and then you go and lose your house payment.
+
+### Roadmap/Planned Features
+1. Back testing of multiple strategies with leverage
+2. WebUI

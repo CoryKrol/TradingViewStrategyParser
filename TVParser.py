@@ -9,6 +9,8 @@ trades = []
 maker_fee = config_creator.get_setting("./settings.ini", 'TradeInfo', 'maker-fee')
 taker_fee = config_creator.get_setting("./settings.ini", 'TradeInfo', 'taker-fee')
 
+slippage = float(config_creator.get_setting("./settings.ini", 'TradeInfo', 'slippage')) / 100
+
 use_limit_orders = input("Use Limit Orders? [y/N]: ")
 use_limit_orders = str.upper(use_limit_orders)
 if use_limit_orders[0] == 'Y':
@@ -64,7 +66,7 @@ with open(path, 'r') as f:
         if trade_capital < 0:
             break
         order_size = trade_capital * math.floor(kelly_leverage)
-        profit_loss = i.get_profit_loss() - (2 * fee)
+        profit_loss = i.get_profit_loss() - (2 * (fee + slippage))
         capital_gain_loss = order_size * profit_loss
         trade_capital = trade_capital + capital_gain_loss
 
@@ -80,11 +82,11 @@ with open(path, 'r') as f:
         if trade_capital < 0:
             break
         order_size = trade_capital * math.floor(0.5 * kelly_leverage)
-        profit_loss = i.get_profit_loss() - (2 * fee)
+        profit_loss = i.get_profit_loss() - (2 * (fee + slippage))
         capital_gain_loss = order_size * profit_loss
         trade_capital = trade_capital + capital_gain_loss
 
     profit_loss_net = trade_capital - capital
-    print("\n\nHalf Kelly: " + str(math.floor(kelly_leverage / 2)))
+    print("\n\nHalf Kelly: " + str(math.floor(2)))
     print("Half Kelly Leveraged Profit/Loss: $" + '{0:.2f}'.format(profit_loss_net))
     print("Half Kelly Leveraged P/L Percent: " + '{0:.2f}'.format(100*profit_loss_net/capital) + '%')
