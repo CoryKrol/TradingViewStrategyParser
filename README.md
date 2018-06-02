@@ -32,7 +32,7 @@ In the TradingView Strategy Tester panel click the [Export Button](https://i.img
 ## Running
 Navigate to the folder and run
 
->$ python TVParser.py
+>$ python tv_parser.py
 
 ### Sample Output
 
@@ -44,16 +44,59 @@ Navigate to the folder and run
 >
 >TradeInfo taker-fee is 0.26
 >
->TradeInfo slippage is 0.05
+>TradeInfo slippage is 0.02
 >
 >Use Limit Orders? [y/N]: n
 >
 >
->Mean Returns: 0.88%
+>Mean Returns: 1.91%
 >
->Standard Deviation of Returns: 3.17%
+>Standard Deviation of Returns: 6.83%
 >
 >
+>Kelly Leverage: 4.10
+>
+>Half Kelly: 2.05
+>
+>Kelly Criterion: 21.61%
+>
+>Initial Capital: $500.00
+>
+>4:1 Leveraged Profit/Loss: $220.49
+>
+>4:1 Leveraged P/L Percent: 44.10%
+>
+>
+>
+>
+>Initial Capital: $500.00
+>
+>3:1 Leveraged Profit/Loss: $183.17
+>
+>3:1 Leveraged P/L Percent: 36.63%
+>
+>
+>
+>
+>Initial Capital: $500.00
+>
+>2:1 Leveraged Profit/Loss: $133.33
+>
+>2:1 Leveraged P/L Percent: 26.67%
+>
+>
+>
+>
+>Initial Capital: $500.00
+>
+>1:1 Leveraged Profit/Loss: $71.82
+>
+>1:1 Leveraged P/L Percent: 14.36%
+
+
+### Disclaimer
+I would advise using the lowest possible leverage and slowly increase the leverage every month. Don't just increase after a few wins because chances are good that you are due for some losses.
+
 >Kelly Leverage: 8.73
 >
 >Half Kelly: 4.37
@@ -76,16 +119,13 @@ Navigate to the folder and run
 >
 >Half Kelly Leveraged P/L Percent: 213.11%
 
-
-
-### Disclaimer
-I would advise using the half Kelly Leverage and rounding down and only increasing if this yields success. 
-
-#### In the above example you see that using the Full Kelly of 8 would have brought on large drawdown where as using the half Kelly we would have tripled our money using this specific strategy. (No you can't have it)
+#### In the above example from an older version of the script you see that using the Full Kelly of 8 would have brought on large drawdown bringing the account close to ruin where as using the half Kelly we would have tripled our money using this specific strategy.
 
 
 #### Again I am not responsible for my program saying "Kelly Leverage: 95" and then you go and lose your house payment.
 
 ### Roadmap/Planned Features
-1. Back testing of multiple strategies with leverage
-2. WebUI
+1. Output monthly profits and losses
+2. Leveraged backtesting for specific months
+3. Back testing of multiple strategies with leverage
+4. WebUI

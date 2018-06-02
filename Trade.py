@@ -15,6 +15,6 @@ class Trade:
 
     def get_profit_loss(self):
         if self.side:
-            return ((self.close_price - self.open_price) / self.open_price)
+            return (self.close_price - self.open_price) / self.open_price
         else:
-            return ((self.open_price - self.close_price) / self.open_price)
+            return (self.open_price - self.close_price) / self.open_price

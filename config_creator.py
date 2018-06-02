@@ -17,8 +17,8 @@ def create_config(path):
     config.set("TradeInfo", "trade-file-path", "trades.txt")
     config.set("TradeInfo", "initial-capital", "500")
     config.set("TradeInfo", "maker-fee", "0.16")
-    config.set("TradeInfo", "taker-fee", "0.20")
-    config.set("TradeInfo", "slippage", "0.05")
+    config.set("TradeInfo", "taker-fee", "0.26")
+    config.set("TradeInfo", "slippage", "0.02")
 
     with open(path, "w") as config_file:
         config.write(config_file)
