@@ -9,7 +9,7 @@ To be used in conjunction with the [Kelly Criterion/Ratio](https://www.tradingvi
 
 
 ## TradingView Strategy Settings and Trade Export
-The program assumes that you used strategy.entry() and strategy.close() functions similar to mine
+The program assumes that in your strategy.entry() and strategy.close() functions the id parameter has no spaces
 
 
 >strategy.entry("Long", 1, when=longCondition)
