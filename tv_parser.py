@@ -121,7 +121,7 @@ if __name__ == "__main__":
 
     print("\n\nKelly Leverage: " + '{0:.2f}'.format(kelly_leverage))
     print("Half Kelly: " + '{0:.2f}'.format(kelly_leverage / 2))
-    print("Kelly Criterion: " + '{0:.2f}'.format(100 * kelly_criterion) + '%')
+    print("Kelly Ratio: " + '{0:.2f}'.format(100 * kelly_criterion) + '%')
 
     for i in range(int(kelly_leverage), 0, -1):
         leveraged_backtester(initial_capital=capital, fees_slippage=fees_and_slippage, leverage=i)

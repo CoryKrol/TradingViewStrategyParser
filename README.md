@@ -58,7 +58,7 @@ Navigate to the folder and run
 >
 >Half Kelly: 2.05
 >
->Kelly Criterion: 21.61%
+>Kelly Ratio: 21.61%
 >
 >Initial Capital: $500.00
 >
