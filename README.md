@@ -1,4 +1,4 @@
-# KellyLeverage-TVStrategyParser
+# TradingViewStrategyParser
 A simple python script to parse the trades from a TradingView strategy and determine the approprite leverage to use according to the Kelly Risk Management System
 
 ## The Kelly System
