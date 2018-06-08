@@ -13,7 +13,11 @@ def parse_trades(trade_path):
             open_data = line.split()
 
             side = open_data[2]
-            open_price = float(open_data[6])
+
+            if open_data[3] == 'Close':
+                open_price = float(open_data[9])
+            else:
+                open_price = float(open_data[6])
 
             close_data = f.readline().split()
 
